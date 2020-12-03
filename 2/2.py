@@ -1,13 +1,6 @@
 #!/usr/bin/env python3
 
-#Each line gives the password policy and then the password.
-#The password policy indicates the lowest and highest number of times a given letter must appear for the password to be valid.
-#How many passwords are valid?
-
-#Each policy actually describes two positions in the password, where 1 means the first character, 2 means the second character, and so on. 
-#(Be careful; Toboggan Corporate Policies have no concept of "index zero"!) Exactly one of these positions must contain the given letter.
-#How many passwords are valid?
-
+#https://adventofcode.com/2020/day/2/
 
 #Get input to iterable format
 def input():
@@ -33,7 +26,7 @@ def countValids(pw):
 		#Check according to question 2
 		if (x[2][minimum-1] == letter) is not (x[2][maximum-1] == letter):
 			q2Amount += 1
-			
+
 	return q1Amount, q2Amount
 
 answer1, answer2 = countValids(input())

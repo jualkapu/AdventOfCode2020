@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+#https://adventofcode.com/2020/day/1/
+
 def input():
 	f = open("input.txt", "r")
 	numbers = []
