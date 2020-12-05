@@ -25,7 +25,6 @@ def findMissingSeat(listOfSeatIDs):
 input = open("input.txt", "r").read().splitlines()
 trans = str.maketrans('FBLR', '0101')
 answer1, listOfSeatIDs = highestSeatID(input, trans)
-listOfSeatIDs.sort()
 answer2 = findMissingSeat(listOfSeatIDs)
 print(answer1, answer2)
 
