@@ -63,4 +63,5 @@ def countPart2(passports):
 
 answer1 = countPart1(input())
 answer2 = countPart2(fieldsToDict(input()))
+
 print(answer1, answer2)
