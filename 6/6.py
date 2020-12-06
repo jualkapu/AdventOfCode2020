@@ -2,8 +2,7 @@
 
 #https://adventofcode.com/2020/day/6/
 
-answer1 = 0
-answer2 = 0
+answer1, answer2 = 0, 0
 for x in open("input.txt").read().split('\n\n'):
 	#For answer1: Counts occurences of different chars withi multiple lines
 	letters = set(x.replace('\n', ''))
@@ -15,5 +14,4 @@ for x in open("input.txt").read().split('\n\n'):
 		if x.count(y) == passengers:
 			answer2 += 1
 
-print(answer1)
-print(answer2)
+print(answer1, answer2)
